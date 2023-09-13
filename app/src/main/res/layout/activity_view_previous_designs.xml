@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:id="@+id/layoutView"
+    android:background="#fff9f9"
+    tools:context=".ViewPreviousDesigns">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="View your previos designs"
+        android:textSize="40dp"
+        android:textColor="#2e2822"
+        android:fontFamily="@font/just_one"
+        ></TextView>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:layout_margin="80dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageDesign"
+        ></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/previousBtn"
+            android:text="Previous"
+            android:textSize="20dp"
+            android:fontFamily="@font/vogue"
+            ></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/nextBtn"
+            android:text="Next"
+            android:textSize="20dp"
+            android:fontFamily="@font/vogue"
+
+            ></Button>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

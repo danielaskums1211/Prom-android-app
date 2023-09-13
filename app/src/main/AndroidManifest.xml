@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bagrutproject">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".MyIntentService"
+            android:exported="false"></service>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.daniela.android.service.receiver"/>
+            </intent-filter>
+
+        </receiver>
+
+        <activity android:name=".UploadImage" />
+        <activity
+            android:name=".ViewPreviousDesigns"
+            android:label="ViewDesigns"
+            android:parentActivityName=".FindYourSize" />
+        <activity
+            android:name=".ChooseHowToDesign"
+            android:label="ChooseHowToDesign"
+            android:parentActivityName=".FindYourSize" />
+        <activity android:name=".VerifyPhoneNo" />
+        <activity android:name=".PreviewActivity" />
+        <activity android:name=".DesignYourDress" />
+        <activity android:name=".FindYourSize" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

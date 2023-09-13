@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BagrutProject</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="not_registered">Not Registered</string>
+    <string name="not_registered_">Not Registered?</string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="login_">Login</string>
+    <string name="register_">Register</string>
+    <string name="title_activity_find_your_size">FindYourSize</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="design_using_dress_me">Design using Dress Me</string>
+</resources>

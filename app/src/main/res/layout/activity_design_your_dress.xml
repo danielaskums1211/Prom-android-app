@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff9f9"
+        android:gravity="center_horizontal"
+        tools:context=".DesignYourDress">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Design Your Dress"
+            android:textColor="#2e2822"
+            android:fontFamily="@font/just_one"
+            android:gravity="center"
+            android:textSize="40dp"></TextView>
+        <TextView
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/hello"
+            android:textColor="#c29393"
+            android:text="Choose what kind of top would you like:"
+            android:textSize="25dp"
+            ></TextView>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_tanktop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tank top"
+                android:textSize="18dp"
+                android:fontFamily="@font/vogue"
+                />
+            <RadioButton android:id="@+id/radio_sleeveless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sleeveless"
+                android:textSize="18dp"
+                android:fontFamily="@font/vogue"
+
+                />
+            <RadioButton android:id="@+id/radio_offtheshoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp"
+                android:text="off the shoulder"
+                android:fontFamily="@font/vogue"
+
+                />
+        </RadioGroup>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ScrollViewofTopDesigns"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_container1"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:background="#fff9f9"
+                    android:orientation="horizontal"
+                    android:onClick="OnClickTopDesigns"
+                    android:visibility="gone"
+                    android:id="@+id/imageGroup1"
+                    ></ImageButton>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:background="#fff9f9"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:onClick="OnClickTopDesigns"
+                    android:id="@+id/imageGroup2"
+                    ></ImageButton>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:background="#fff9f9"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:onClick="OnClickTopDesigns"
+                    android:id="@+id/imageGroup3"
+                    ></ImageButton>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:background="#fff9f9"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:onClick="OnClickTopDesigns"
+                    android:id="@+id/imageGroup4"
+                    ></ImageButton>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/hello"
+                android:textColor="#c29393"
+                android:text="Choose what kind of bottom would you like:"
+                android:textSize="25dp"></TextView>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio_long"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="long"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/vogue"
+
+                    />
+                <RadioButton android:id="@+id/radio_short"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="short"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/vogue"
+
+                    />
+
+
+            </RadioGroup>
+
+            <HorizontalScrollView
+                android:id="@+id/ScrollViewofBtnDesigns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+
+                <LinearLayout
+                    android:id="@+id/image_container2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageGroup1Btm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:background="#fff9f9"
+                        android:onClick="OnClickBtmDesigns"
+                        android:orientation="horizontal"
+                        android:visibility="gone"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/imageGroup2Btm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:background="#fff9f9"
+                        android:onClick="OnClickBtmDesigns"
+                        android:orientation="horizontal"
+                        android:visibility="gone"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/imageGroup3Btm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:background="#fff9f9"
+                        android:onClick="OnClickBtmDesigns"
+                        android:orientation="horizontal"
+                        android:visibility="gone"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/imageGroup4Btm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:background="#fff9f9"
+                        android:onClick="OnClickBtmDesigns"
+                        android:orientation="horizontal"
+                        android:visibility="gone"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/imageGroup5Btm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:background="#fff9f9"
+                        android:onClick="OnClickBtmDesigns"
+                        android:orientation="horizontal"
+                        android:visibility="gone"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/imageGroup6Btm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:background="#fff9f9"
+                        android:onClick="OnClickBtmDesigns"
+                        android:orientation="horizontal"
+                        android:visibility="gone"></ImageButton>
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:gravity="center"
+                android:textColor="#c29393"
+                android:fontFamily="@font/hello"
+                android:text="Choose a color (color picker - without preview / one of the top colors):"
+                android:textAlignment="center"
+                android:textSize="25dp"></TextView>
+
+            <Button
+                android:id="@+id/chosenColorBtn"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/chosen_color_btn"
+                android:fontFamily="@font/vogue"
+                android:text="YOUR CHOSEN COLOR"
+                android:textSize="18dp"></Button>
+
+            <Button
+                android:id="@+id/btnColorPicker"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vogue"
+                android:textSize="18dp"
+                android:text="open color picker"></Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bluebtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:tag="#87CEEB"
+                    android:background="@drawable/buttonblue_round"
+                    android:onClick="OnClickColorButtons" />
+
+                <Button
+                    android:id="@+id/purplebtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:tag="#B89CEA"
+                    android:background="@drawable/buttonpurple_round"
+                    android:onClick="OnClickColorButtons" />
+
+                <Button
+                    android:id="@+id/pinkbtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:tag="#FF95B3"
+                    android:background="@drawable/buttonpink_round"
+                    android:onClick="OnClickColorButtons" />
+
+                <Button
+                    android:id="@+id/yellowbtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:tag="#FFEB3B"
+                    android:background="@drawable/buttonyellow_round"
+                    android:onClick="OnClickColorButtons" />
+
+                <Button
+                    android:id="@+id/greenbtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:tag="#9BD854"
+                    android:background="@drawable/buttongreen_round"
+                    android:onClick="OnClickColorButtons" />
+
+
+                <Button
+                    android:id="@+id/whitebtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:tag="#FAF8F8"
+                    android:background="@drawable/buttonwhite_round"
+                    android:onClick="OnClickColorButtons" />
+
+                <Button
+                    android:id="@+id/redbtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:tag="#E61B1B"
+                    android:background="@drawable/buttonred_round"
+                    android:onClick="OnClickColorButtons" />
+
+                <Button
+                    android:id="@+id/greybtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:tag="#B5B3B3"
+                    android:background="@drawable/buttongrey_round"
+                    android:onClick="OnClickColorButtons" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+

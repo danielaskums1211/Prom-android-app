@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1020809921250",
+    "firebase_url": "https://bagrutproject-ef8a8.firebaseio.com",
+    "project_id": "bagrutproject-ef8a8",
+    "storage_bucket": "bagrutproject-ef8a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020809921250:android:7dc2d6ec9348b26ed4d4bb",
+        "android_client_info": {
+          "package_name": "com.example.bagrutproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020809921250-ioikbb8r9ogee6it1c9nfel37r0qarvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAIswBJuGx13SAN-3jV9m_gkn5INptPxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020809921250-ioikbb8r9ogee6it1c9nfel37r0qarvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

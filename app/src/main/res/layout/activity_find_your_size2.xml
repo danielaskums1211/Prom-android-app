@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="#fff9f9"
+        android:gravity="center_horizontal"
+        tools:context=".FindYourSize">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Find Your Fit Size"
+        android:gravity="center"
+        android:textColor="#2e2822"
+        android:fontFamily="@font/just_one"
+        android:textSize="40dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="28dp"
+        android:fontFamily="@font/hello"
+        android:textColor="#c29393"
+        android:text="Fill your body measures below (in cm):"></TextView>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/dress_measures" />
+    <EditText
+        android:id="@+id/bustMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:hint="b u s t"
+        android:fontFamily="@font/vogue"
+        ></EditText>
+    <EditText
+        android:id="@+id/waistMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:hint="w a i s t"
+        android:fontFamily="@font/vogue"
+
+        ></EditText>
+    <EditText
+        android:id="@+id/hipsMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:hint="h i p s"
+        android:fontFamily="@font/vogue"
+
+        android:layout_marginBottom="20dp"
+        ></EditText>
+    <Button
+        android:layout_width="90dp"
+        android:id= "@+id/showSizeButton"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/just_one"
+        android:text="S E N D"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#c29393"
+        android:fontFamily="@font/hello"
+        android:textSize="25dp"
+        android:text="How to Measure?"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/vogue"
+        android:text="1.Bust
+
+
+                                                                                                   Measure around fullest part."
+        android:gravity="center"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/vogue"
+        android:text="2. WAIST
+
+                                                                                                  Measure around natural waistline."
+        android:gravity="center"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/vogue"
+        android:text="3. HIPS
+                                                                                                  Measure 20cm down from the natural waistline."
+        android:gravity="center"
+        ></TextView>
+    </LinearLayout>
+</ScrollView>
+
+

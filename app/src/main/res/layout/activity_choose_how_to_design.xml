@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/layout"
+    android:background="#fff9f9"
+    tools:context=".ChooseHowToDesign">
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="127dp"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@android:string/untitled"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="@font/hello"
+        android:layout_marginTop="100dp"
+        android:textColor="#c29393"
+        android:textSize="24dp"
+        android:text="Choose how would you like to design your dress:"/>
+
+    <Button
+        android:id="@+id/designWithDM"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/vogue"
+        android:layout_marginTop="15dp"
+        android:text="Design using Dress Me" />
+
+    <Button
+        android:id="@+id/uploadPhoto"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/vogue"
+        android:text="Upload a photo"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/hello"
+        android:text="or:"
+        android:textColor="#c29393"
+        android:textSize="25dp"></TextView>
+
+    <Button
+        android:id="@+id/viewPreviousDesigns"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/vogue"
+        android:text="View Previous Designs" />
+
+
+</LinearLayout>
